@@ -1,0 +1,153 @@
+:root {
+    --rgb: rgb(255, 255, 255);
+    --black--rgb: rgb(0, 0, 0);
+    --black: #161616;
+    --green: #1D2E28;
+    --secondary: #a0a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--rgb);
+}
+  
+html,
+  body {
+    overflow: hidden;
+    background-color: var(--green);
+    font-family: 'Montserrat', sans-serif;
+}
+  
+main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+}
+
+header .menu-items ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .menu-items ul li{
+    margin: 0px 15px; 
+    font-size: 20px;
+    
+}
+
+header .menu-items ul .special {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+}
+
+header .lang {
+    margin-right: 25px;
+}
+
+header .logo {
+    margin-left: 25px;
+}
+
+.menu-links{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup-content {
+    background-color: #fff;
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.popup-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.input {
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    cursor: ew-resize;
+    white-space: nowrap;
+    padding: 10vh 0;
+  }
+  
+  .title {
+    font-family: "Canopee", sans-serif;
+    font-size: 7vw;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0 15%;
+    will-change: transform;
+  }
